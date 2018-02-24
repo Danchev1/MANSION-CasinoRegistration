@@ -1,7 +1,7 @@
 <template>
     <div class="form-group"
          v-if="fieldGroup.input.type !== 'checkbox'">
-      <label :for="fieldGroup.label.forArtibute">{{ fieldGroup.label.text }}</label>
+      <label :for="fieldGroup.label.forArtibute" class="font-weight-medium">{{ fieldGroup.label.text }}</label>
       <input class="form-control"
              v-model="fieldGroup.input.value"
              :type="fieldGroup.input.type"

@@ -12,7 +12,7 @@
                                   :fieldGroup="item">
             </field-group-component>
             <br>
-            <router-link class="btn btn-primary btn-block" to="/step-2">Sign Up</router-link>
+            <router-link class="btn btn-success btn-block" to="/step-2">Sign Up</router-link>
           </div>
         </div>
       </div>
