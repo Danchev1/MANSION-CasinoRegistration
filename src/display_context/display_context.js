@@ -78,3 +78,71 @@ export let formDescriptor = [
     }
   }
 ]
+
+export let formInformationDescriptor = [
+  {
+    id: 1,
+    label: {
+      forArtibute: 'address2Input',
+      text: 'Address No.2'
+    },
+    input: {
+      type: 'text',
+      name: 'adress',
+      placeholder: 'Enter your first address',
+      value: ''
+    }
+  },
+  {
+    id: 2,
+    label: {
+      forArtibute: 'address2Input',
+      text: 'Address No.2'
+    },
+    input: {
+      type: 'text',
+      name: 'address2',
+      placeholder: 'Enter your second address',
+      value: ''
+    }
+  },
+  {
+    id: 3,
+    label: {
+      forArtibute: 'cityInput',
+      text: 'City'
+    },
+    input: {
+      type: 'text',
+      name: 'city',
+      placeholder: 'City',
+      value: ''
+    }
+  },
+  {
+    id: 4,
+    label: {
+      forArtibute: 'countryInput',
+      text: 'Country'
+    },
+    input: {
+      type: 'text',
+      name: 'country',
+      placeholder: 'Country',
+      value: ''
+    }
+  },
+  {
+    id: 5,
+    label: {
+      forArtibute: 'pcodeInput',
+      text: 'Postal Code'
+    },
+    input: {
+      type: 'text',
+      name: 'postal-code',
+      placeholder: 'Postal code',
+      value: ''
+    }
+  }
+]
