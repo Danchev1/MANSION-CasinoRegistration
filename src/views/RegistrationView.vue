@@ -4,6 +4,7 @@
       <div class="col-md-6">
         <div class="create-account-form">
           <h2 class="h4">Create Account</h2>
+          <hr>
           <div class="form">
             <field-group-component v-if="formDescriptor.length > 0"
                                   v-for="item in formDescriptor"
