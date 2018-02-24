@@ -2,7 +2,7 @@
   <div id="app">
     <header-component></header-component>
     <div class="main">
-      <router-view class="container"></router-view>
+      <router-view></router-view>
     </div>
     <footer-component></footer-component>
   </div>

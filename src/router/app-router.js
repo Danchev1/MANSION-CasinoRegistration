@@ -1,12 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import App from '../AppView.vue'
+import RegistrationView from '../views/RegistrationView.vue'
+import JumbotronView from '../views/JumbotronView.vue'
 
 Vue.use(Router)
 
 const routes = [
-  { path: '/', name: 'App', component: App },
-  {path: '*', redirect: '/'}
+  { path: '/', name: 'RegistrationView', component: RegistrationView },
+  { path: '/ready-to-play', name: 'JumbotronView', component: JumbotronView },
+  { path: '*', redirect: '/' }
 
 ]
 
