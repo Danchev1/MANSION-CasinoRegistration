@@ -4,30 +4,27 @@
     <div class="main">
       <router-view></router-view>
     </div>
-    <footer-component></footer-component>
   </div>
 </template>
 
 <script>
   import router from './router/app-router'
-  import HeaderComponent from './components/headerComponent.vue'
-  import FooterComponent from './components/footerComponent.vue'
+  import HeaderComponent from './components/HeaderComponent.vue'
 
   export default {
     components: {
-      FooterComponent,
       HeaderComponent
     },
-    name: 'app-view',
-    data () {
-      return {
-        msg: 'Welcome to Your Vue.js App'
-      }
-    }
+    name: 'app-view'
   }
 </script>
 
 <style lang="scss">
-  @import './assets/scss/custom_bootstrap.scss';
-  @import '../node_modules/bootstrap/scss/bootstrap.scss';
+  @import './assets/scss/main.scss';
+
+  .main {
+    background: url('./assets/roulet-bg.jpg') no-repeat center center;
+    background-size: cover
+  }
+
 </style>

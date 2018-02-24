@@ -7,7 +7,7 @@
           <p class="lead">In order to play with real money, you will need to provide more information. You can do so now if you wish, or skip and do it at a later time.</p>
           <hr class="my-4">
           <p class="lead">
-            <router-link class="btn btn-primary btn-lg" :to="{ name: 'JumbutronView' }">Contenue registration</router-link>
+            <router-link class="btn btn-primary btn-lg" :to="{ name: 'RegistrationView' }">Contenue registration</router-link>
             <a class="btn btn-primary btn-lg" href="http://www.casino.com/" >Skip</a>
           </p>
         </div>

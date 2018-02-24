@@ -2,8 +2,8 @@
   <div class="container">
     <div class="row justify-content-end">
       <div class="col-md-6">
-        <div class="create-account-form">
-          <h2 class="h4">Create Account</h2>
+        <div class="registration-form">
+          <h2 class="h3 text-center">Create Account</h2>
           <hr>
           <div class="form">
             <field-group-component v-if="formDescriptor.length > 0"
@@ -11,7 +11,8 @@
                                   :key="item.id"
                                   :fieldGroup="item">
             </field-group-component>
-            <button class="btn btn-primary" @click="">Sign Up</button>
+            <br>
+            <router-link class="btn btn-primary btn-block" to="/step-2">Sign Up</router-link>
           </div>
         </div>
       </div>
