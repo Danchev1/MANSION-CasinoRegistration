@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row justify-content-end">
-      <div class="col-md-6">
+      <div class="col-xs-12 col-sm-12 col-md-7 col-lg-6">
         <div class="registration-form">
           <h2 class="h3 text-center">Create Account</h2>
           <hr>
