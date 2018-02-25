@@ -22,9 +22,9 @@
 <style lang="scss">
   @import './assets/scss/main.scss';
 
-  #app {
+  .main {
     background: url('./assets/roulet-bg.jpg') no-repeat center center;
-    background-size: cover;
+    background-size: cover
   }
 
 </style>
