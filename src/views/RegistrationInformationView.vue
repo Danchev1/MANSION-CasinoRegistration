@@ -12,7 +12,7 @@
                                    :fieldGroup="item">
             </field-group-component>
             <br>
-            <router-link class="btn btn-success btn-block" to="/step-3">Register</router-link>
+            <router-link class="btn btn-success btn-block" to="/step-4">Register</router-link>
           </div>
         </div>
       </div>
@@ -20,8 +20,9 @@
   </div>
 </template>
 <script>
-  import { formInformationDescriptor } from '../display_context/display_context'
+  import { formInformationDescriptor } from '../js/display_context'
   import FieldGroupComponent from '../components/FieldGroupComponent.vue'
+
   export default {
     name: 'registration-information-view',
     components: {
@@ -33,11 +34,10 @@
       }
     },
     methods: {
-      submit() {
-
+      submit () {
       }
     },
-    created() {
+    created () {
       this.formDescriptor = formInformationDescriptor
     }
 

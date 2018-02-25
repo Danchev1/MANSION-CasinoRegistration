@@ -7,12 +7,12 @@
           <hr>
           <div class="form">
             <field-group-component v-if="formDescriptor.length > 0"
-                                  v-for="item in formDescriptor"
-                                  :key="item.id"
-                                  :fieldGroup="item">
+                                   v-for="item in formDescriptor"
+                                   :key="item.id"
+                                   :fieldGroup="item">
             </field-group-component>
             <br>
-            <router-link class="btn btn-success btn-block" to="/step-2">Sign Up</router-link>
+            <button class="btn btn-success btn-block" @click="submit()">Sign Up</button>
           </div>
         </div>
       </div>
@@ -20,8 +20,10 @@
   </div>
 </template>
 <script>
-  import { formDescriptor } from '../display_context/display_context'
+  import router from '../router/app-router'
+  import { formDescriptor } from '../js/display_context'
   import FieldGroupComponent from '../components/FieldGroupComponent.vue'
+  import { validate } from '../js/validation'
 
   export default {
     components: {
@@ -34,8 +36,23 @@
       }
     },
     methods: {
-      submit() {
+      redirectTo (destination) {
+        router.push(destination)
+      },
+      validAll () {
+        this.formDescriptor.forEach(field => {
+          validate(field)
+        })
+      },
+      submit () {
+        this.validAll()
+        let form = this.formDescriptor.every(field => {
+          return field.isValid
+        })
 
+        if(form) {
+          this.redirectTo({ name: 'CardView' })
+        }
       }
     },
     created () {
