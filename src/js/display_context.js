@@ -101,13 +101,13 @@ export let formInformationDescriptor = [
     id: 1,
     isValid: true,
     validation: {
-      required: false,
+      required: true,
       pattern: '',
-      error_message: ''
+      error_message: 'Address is reuired'
     },
     label: {
-      forArtibute: 'address2Input',
-      text: 'Address No.2'
+      forArtibute: 'address1Input',
+      text: 'Address No.1'
     },
     input: {
       type: 'text',
@@ -139,9 +139,9 @@ export let formInformationDescriptor = [
     id: 3,
     isValid: true,
     validation: {
-      required: false,
+      required: true,
       pattern: '',
-      error_message: ''
+      error_message: 'Country is required. Can contain only digits'
     },
     label: {
       forArtibute: 'cityInput',
@@ -158,9 +158,9 @@ export let formInformationDescriptor = [
     id: 4,
     isValid: true,
     validation: {
-      required: false,
+      required: true,
       pattern: '',
-      error_message: ''
+      error_message: 'Country is required. Can contain only digits'
     },
     label: {
       forArtibute: 'countryInput',
@@ -178,15 +178,15 @@ export let formInformationDescriptor = [
     isValid: true,
     validation: {
       required: false,
-      pattern: '',
-      error_message: ''
+      pattern: /^\\d+$/,
+      error_message: 'Postal code is required. Field must contain only digits'
     },
     label: {
       forArtibute: 'pcodeInput',
       text: 'Postal Code'
     },
     input: {
-      type: 'text',
+      type: 'number',
       name: 'postal-code',
       placeholder: 'Postal code',
       value: ''
@@ -197,8 +197,8 @@ export let formInformationDescriptor = [
     isValid: true,
     validation: {
       required: false,
-      pattern: '',
-      error_message: ''
+      pattern: /^\\d+$/,
+      error_message: 'Phone is required. Field must contain only digits'
     },
     label: {
       forArtibute: 'phoneInput',

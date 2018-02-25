@@ -12,7 +12,7 @@
                                    :fieldGroup="item">
             </field-group-component>
             <br>
-            <router-link class="btn btn-success btn-block" to="/step-4">Register</router-link>
+            <button class="btn btn-success btn-block" @click="submit()">Register</button>
           </div>
         </div>
       </div>
@@ -20,6 +20,7 @@
   </div>
 </template>
 <script>
+  import { validate } from '../js/validation'
   import { formInformationDescriptor } from '../js/display_context'
   import FieldGroupComponent from '../components/FieldGroupComponent.vue'
 
@@ -34,7 +35,19 @@
       }
     },
     methods: {
+      validAll () {
+        this.formDescriptor.forEach(field => {
+          validate(field)
+        })
+      },
       submit () {
+        this.validAll()
+        let form = this.formDescriptor.every(field => {
+          return field.isValid
+        })
+        if (form) {
+          this.redirectTo({ name: 'CardView' })
+        }
       }
     },
     created () {
