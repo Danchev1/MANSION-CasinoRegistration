@@ -1,6 +1,9 @@
 export let formDescriptor = [
   {
     id: 1,
+    layout: {
+      columns: ''
+    },
     label: {
       forArtibute: 'firstNameInput',
       text: 'First Name'
@@ -15,19 +18,6 @@ export let formDescriptor = [
   {
     id: 2,
     label: {
-      forArtibute: 'lastNameInput',
-      text: 'Last Name'
-    },
-    input: {
-      type: 'text',
-      name: 'lname',
-      placeholder: 'Enter your last name',
-      value: ''
-    }
-  },
-  {
-    id: 3,
-    label: {
       forArtibute: 'usernameInput',
       text: 'Username'
     },
@@ -39,7 +29,7 @@ export let formDescriptor = [
     }
   },
   {
-    id: 4,
+    id: 3,
     label: {
       forArtibute: 'emailInput',
       text: 'Email'
@@ -52,7 +42,7 @@ export let formDescriptor = [
     }
   },
   {
-    id: 5,
+    id: 4,
     label: {
       forArtibute: 'passwordInput',
       text: 'Password'
@@ -65,7 +55,7 @@ export let formDescriptor = [
     }
   },
   {
-    id: 6,
+    id: 5,
     label: {
       forArtibute: 'checkboxInput',
       text: 'By checking this box, I agree to the Terms & Conditions of the site.'
@@ -82,6 +72,9 @@ export let formDescriptor = [
 export let formInformationDescriptor = [
   {
     id: 1,
+    layout: {
+      columns: 2
+    },
     label: {
       forArtibute: 'address2Input',
       text: 'Address No.2'
@@ -142,6 +135,19 @@ export let formInformationDescriptor = [
       type: 'text',
       name: 'postal-code',
       placeholder: 'Postal code',
+      value: ''
+    }
+  },
+  {
+    id: 6,
+    label: {
+      forArtibute: 'phoneInput',
+      text: 'Phone'
+    },
+    input: {
+      type: 'tel',
+      name: 'phone',
+      placeholder: '+555-555-555',
       value: ''
     }
   }
