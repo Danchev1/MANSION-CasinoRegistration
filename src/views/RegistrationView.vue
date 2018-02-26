@@ -36,9 +36,6 @@
       }
     },
     methods: {
-      redirectTo (destination) {
-        router.push(destination)
-      },
       validAll () {
         this.formDescriptor.forEach(field => {
           validate(field)
@@ -51,7 +48,7 @@
         })
 
         if(form) {
-          this.redirectTo({ name: 'CardView' })
+          router.push({ name: 'CardView' })
         }
       }
     },

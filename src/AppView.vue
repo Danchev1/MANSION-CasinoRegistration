@@ -2,7 +2,9 @@
   <div id="app">
     <header-component></header-component>
     <div class="main">
-      <router-view></router-view>
+      <transition name="router-animation" mode="out-in">
+        <router-view></router-view>
+      </transition>
     </div>
   </div>
 </template>
