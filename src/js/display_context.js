@@ -11,7 +11,7 @@ export let formDescriptor = [
       error_message: 'Name is required'
     },
     label: {
-      forArtibute: 'firstNameInput',
+      forAttribute: 'firstNameInput',
       text: 'First Name'
     },
     input: {
@@ -30,7 +30,7 @@ export let formDescriptor = [
       error_message: 'Username must have min 4 and 12 max characters'
     },
     label: {
-      forArtibute: 'usernameInput',
+      forAttribute: 'usernameInput',
       text: 'Username'
     },
     input: {
@@ -49,7 +49,7 @@ export let formDescriptor = [
       error_message: 'Wrong syntax, example: jondoe@jondoe.com'
     },
     label: {
-      forArtibute: 'emailInput',
+      forAttribute: 'emailInput',
       text: 'Email'
     },
     input: {
@@ -68,7 +68,7 @@ export let formDescriptor = [
       error_message: 'Password: min 6 and max 6 charactes, at least 1 upercase, lowercase, digit, special character'
     },
     label: {
-      forArtibute: 'passwordInput',
+      forAttribute: 'passwordInput',
       text: 'Password'
     },
     input: {
@@ -87,7 +87,7 @@ export let formDescriptor = [
       error_message: 'Must agree with terms and conditions'
     },
     label: {
-      forArtibute: 'checkboxInput',
+      forAttribute: 'checkboxInput',
       text: 'By checking this box, I agree to the Terms & Conditions of the site.'
     },
     input: {
@@ -109,7 +109,7 @@ export let formInformationDescriptor = [
       error_message: 'Address is reuired'
     },
     label: {
-      forArtibute: 'address1Input',
+      forAttribute: 'address1Input',
       text: 'Address No.1'
     },
     input: {
@@ -128,7 +128,7 @@ export let formInformationDescriptor = [
       error_message: ''
     },
     label: {
-      forArtibute: 'address2Input',
+      forAttribute: 'address2Input',
       text: 'Address No.2'
     },
     input: {
@@ -147,7 +147,7 @@ export let formInformationDescriptor = [
       error_message: 'City is required. Field must contain only letters'
     },
     label: {
-      forArtibute: 'cityInput',
+      forAttribute: 'cityInput',
       text: 'City'
     },
     input: {
@@ -166,7 +166,7 @@ export let formInformationDescriptor = [
       error_message: 'Country is required. Field must contain only letters'
     },
     label: {
-      forArtibute: 'countryInput',
+      forAttribute: 'countryInput',
       text: 'Country'
     },
     input: {
@@ -185,7 +185,7 @@ export let formInformationDescriptor = [
       error_message: 'Postal code is required. Field must contain only digits'
     },
     label: {
-      forArtibute: 'pcodeInput',
+      forAttribute: 'pcodeInput',
       text: 'Postal Code'
     },
     input: {
@@ -204,7 +204,7 @@ export let formInformationDescriptor = [
       error_message: 'Phone is required. Field must contain only digits'
     },
     label: {
-      forArtibute: 'phoneInput',
+      forAttribute: 'phoneInput',
       text: 'Phone'
     },
     input: {
