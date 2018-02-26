@@ -43,6 +43,7 @@
       },
       submit () {
         this.validAll()
+        // simulate only go to next route if all field are valid
         let form = this.formDescriptor.every(field => {
           return field.isValid
         })
@@ -53,6 +54,7 @@
       }
     },
     created () {
+      // assign context object on create
       this.formDescriptor = formDescriptor
     }
   }

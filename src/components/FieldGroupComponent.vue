@@ -36,6 +36,8 @@
       }
     },
     methods: {
+      /* simulate real time validation, generally isValid is used for validation,
+       * buy i use it here like a buffer to remove validation errors on typing */
       removeValidation () {
         this.fieldGroup.isValid = true
       }

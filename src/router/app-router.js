@@ -17,8 +17,7 @@ const routes = [
 ]
 
 const router = new Router({
-  routes,
-  linkActiveClass: 'is-active'
+  routes
 })
 
 

@@ -1,3 +1,6 @@
+/* Display context object works as meta data or source of define what to input
+   to render */
+
 export let formDescriptor = [
   {
     id: 1,

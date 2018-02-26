@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app-view">
     <header-component></header-component>
     <div class="main">
       <transition name="router-animation" mode="out-in">
@@ -24,7 +24,7 @@
 <style lang="scss">
   @import './assets/scss/main.scss';
 
-  #app {
+  #app-view {
     background: url('./assets/roulet-bg.jpg') no-repeat center bottom;
     background-size: cover
   }
