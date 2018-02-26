@@ -24,8 +24,8 @@
 <style lang="scss">
   @import './assets/scss/main.scss';
 
-  .main {
-    background: url('./assets/roulet-bg.jpg') no-repeat center center;
+  #app {
+    background: url('./assets/roulet-bg.jpg') no-repeat center bottom;
     background-size: cover
   }
 
