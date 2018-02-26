@@ -10,7 +10,9 @@
            :autocomplete="fieldGroup.input.name"
            :id="fieldGroup.label.forArtibute"
            :placeholder="fieldGroup.input.placeholder">
-    <transition name="router-animation" mode="out-in"><small class="invalid-feedback" v-if="!fieldGroup.isValid">{{ fieldGroup.validation.error_message }}</small></transition>
+    <transition name="router-animation" mode="out-in">
+      <small class="invalid-feedback" v-if="!fieldGroup.isValid">{{ fieldGroup.validation.error_message }}</small>
+    </transition>
   </div>
   <div class="form-check"
        v-else>
@@ -27,6 +29,7 @@
   </div>
 </template>
 <script>
+  // given bootstrap 4's way of defining checkbox group, is the reason for if else statment
   export default {
     name: 'field-group-component',
     props: {

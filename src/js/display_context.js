@@ -1,5 +1,5 @@
 /* Display context object works as meta data or source of define what to input
-   to render */
+   to render for now works checked to work with type: text, checkbox, email, number */
 
 export let formDescriptor = [
   {
@@ -26,7 +26,7 @@ export let formDescriptor = [
     isValid: true,
     validation: {
       required: true,
-      pattern: /^[a-zA-Z]{4,12}$/,
+      pattern: /^[a-zA-Z0-9]{4,12}$/,
       error_message: 'Username must have min 4 and 12 max characters'
     },
     label: {
@@ -143,8 +143,8 @@ export let formInformationDescriptor = [
     isValid: true,
     validation: {
       required: true,
-      pattern: '',
-      error_message: 'Country is required. Can contain only digits'
+      pattern: /^[a-zA-Z]{1,}$/,
+      error_message: 'City is required. Field must contain only letters'
     },
     label: {
       forArtibute: 'cityInput',
@@ -162,8 +162,8 @@ export let formInformationDescriptor = [
     isValid: true,
     validation: {
       required: true,
-      pattern: '',
-      error_message: 'Country is required. Can contain only digits'
+      pattern: /^[a-zA-Z]{1,}$/,
+      error_message: 'Country is required. Field must contain only letters'
     },
     label: {
       forArtibute: 'countryInput',
@@ -180,8 +180,8 @@ export let formInformationDescriptor = [
     id: 5,
     isValid: true,
     validation: {
-      required: false,
-      pattern: /^\\d+$/,
+      required: true,
+      pattern: /([0-9])/,
       error_message: 'Postal code is required. Field must contain only digits'
     },
     label: {
@@ -189,7 +189,7 @@ export let formInformationDescriptor = [
       text: 'Postal Code'
     },
     input: {
-      type: 'number',
+      type: 'text',
       name: 'postal-code',
       placeholder: 'Postal code',
       value: ''
@@ -199,8 +199,8 @@ export let formInformationDescriptor = [
     id: 6,
     isValid: true,
     validation: {
-      required: false,
-      pattern: /^\\d+$/,
+      required: true,
+      pattern: /([0-9])/,
       error_message: 'Phone is required. Field must contain only digits'
     },
     label: {

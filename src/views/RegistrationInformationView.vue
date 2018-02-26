@@ -11,6 +11,7 @@
                                    :key="item.id"
                                    :fieldGroup="item">
             </field-group-component>
+            <bonus-code-component :code="bonusCode"></bonus-code-component>
             <br>
             <button class="btn btn-success btn-block" @click="submit()">Register</button>
           </div>
@@ -20,18 +21,26 @@
   </div>
 </template>
 <script>
+  import router from '../router/app-router'
   import { validate } from '../js/validation'
   import { formInformationDescriptor } from '../js/display_context'
   import FieldGroupComponent from '../components/FieldGroupComponent.vue'
+  import BonusCodeComponent from '../components/BonusCodeComponent.vue'
 
   export default {
     name: 'registration-information-view',
     components: {
+      BonusCodeComponent,
       FieldGroupComponent
     },
     data () {
       return {
-        formDescriptor: []
+        formDescriptor: [],
+        bonusCode: {
+          value: '',
+          label: 'Bonus code',
+          checkboxLabel: 'Do you have a bonus code? Click here.'
+        }
       }
     },
     methods: {
@@ -46,7 +55,7 @@
           return field.isValid
         })
         if (form) {
-          this.redirectTo({ name: 'CardView' })
+          router.push({ name: 'FinalView' })
         }
       }
     },
