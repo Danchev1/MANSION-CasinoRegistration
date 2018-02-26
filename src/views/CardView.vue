@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="row">
+    <div class="row justify-content-end">
       <div class="col-md-7">
         <div class="card bg-light slogan">
           <div class="card-body">
